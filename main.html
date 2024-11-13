@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metadatos adicionales-->
+     <meta name="author" content="Jesus Ferruzca">
+     <meta name = "descripcion" content = "Una pagina de mi proyecto final de html del bootcamp sobre etiquetas semanticas y
+     estructura básica de una página wed">
+
+     <meta name ="keywords" content="= HTML, etiquetas semanticas, proyecto">
+
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
+</head>
+<body>
+    <header>Mi blog personal
+    <nav>
+        <ul>
+            <li><a href="#"><span class="material-icons">home</span>Inicio</a></li>
+            <li><a href="#"><span class="material-icons">favorite</span>Sobre mi</a></li>
+            <li><a href="#"><span class="material-icons">bookmarks</span>Articulos</a></li>
+            <li><a href="#contacto"><span class="material-icons">contact_page</span>Conctato</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section id = "contacto">
+            <h2>Formulario de contacto</h2>
+            <p>Rellena el formulario para envia tus comentarios o preguntas</p>
+            <!--Formulario de contactos-->
+            <form>
+                <!-- label es una etiqueta que nos sirve para asociar un texto descriptivo
+                 a un elemento de entrada
+                 El atributo for en label ayuda a vincularse con un elemento de formulario especofico
+                 ya que el atributo for contiene el valor del id del campo de entrada con el cual se 
+                 asocia-->
+                 <label for ="nombre">Nombre</label>
+                 <input type = "text" id ="nombre" placeholder="Escribe tu nombre" required>
+                 
+                 <label for = "email">Correo electronico:</label>
+                 <input type="email" id ="email" placeholder="ejemplo@correo.com" required>
+
+                 <label for="asunto">Asunto</label>
+                 <select id= "asunto">
+                    <option>Consulta</option>
+                    <option>Sugerencia</option>
+                    <option>Quejas</option>
+                    <option>Otro</option>
+                 </select>
+
+                 <label for="mensaje">Mesaje</label>
+                 <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje aqui..." required></textarea>
+
+                 <fieldset>
+                    <!-- legend nos ayuda a proporcionar un titulo a mi grupo de informacion alamcenado el fieldset-->
+                     <legend>Género</legend>
+                     <label for="genero -masculino">Masculino</label>
+                     <input type="radio" name="genero" id="genero-masculino">
+
+                     <label for="genero-femenino">Femenino</label>
+                     <input type="radio" name="genero" id=" genero-femenino">
+
+                     <label for="genero-otro">Otro</label>
+                     <input type ="radio" name="genero" id="genero-otro">
+                 </fieldset>
+
+                 <fieldset>
+                    <legend>Intereses</legend>
+                    <label for="intereses-cocinar">Cocinar</label>
+                    <input type="checkbox" name="cocinar" id="intereses-cocinar">
+
+                    <label for="intereses-meditar">Meditar</label>
+                    <input type="checkbox" name="meditar" id="intereses-meditar">
+
+                    <label for="intereses-senderismo">Senderismo</label>
+                    <input type="checkbox" name="senderismo" id="intereses-senderismo">
+
+                    <label for="intereses-escribir">Escribir</label>
+                    <input type="checkbox" name="escribir" id="intereses-escribir">
+                 </fieldset>
+                 <button type="submit"><span class="material-icons">send</span>Enviar</button>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p> 
+    </footer>
+
+    
+</body>
+</html>
